@@ -29,7 +29,7 @@ def main():
             print line
             continue
 
-        if iscont(line)
+        if iscont(line):
             line = line[6:].strip()
             prev += line
         else:
