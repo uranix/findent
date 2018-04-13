@@ -15,6 +15,8 @@ def main():
         while line and line[-1] in '\r\n':
             line = line[:-1]
 
+        line.replace('\t', ' '*8)
+
         if not line:
             print line
             continue
