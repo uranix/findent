@@ -29,12 +29,13 @@ def main():
             print line
             continue
 
-        if iscont(line):
-            prev += line[6:]
+        if iscont(line)
+            line = line[6:].strip()
+            prev += line
         else:
             if prev:
                 print prev
-            prev = line
+            prev = line.rstrip()
     if prev:
         print prev
 
